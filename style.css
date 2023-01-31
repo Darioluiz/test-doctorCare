@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2? family= DM+Sans:wght@400;700 & display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --primore-core: hsl(170, 100%, 26%);
+  --secondary-colo: hsl(210, 11%, 15%);
+  --primore-stats: hsl(39, 100%, 97%);
+  --primore-coreStats: hsl(170, 100%, 26%);
+  --brand-light: hsl(148, 23%, 89%);
+  --nav-heith: 7.2rem;
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/*--------GERAL------- */
+
+.wapper {
+  width: 37.5rem;
+  text-align: center;
+  margin-inline: auto;
+}
+
+body {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+header {
+  margin-top: calc(4.1rem + var(--nav-heith));
+}
+
+.wapper {
+  width: 37.5rem;
+  text-align: center;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+.wapper h3,
+button {
+  text-transform: uppercase;
+}
+
+.wapper h3 {
+  margin: 3.3rem auto 2.4rem;
+
+  color: var(--primore-core);
+  font-size: 1.4rem;
+}
+
+.wapper h1 {
+  color: var(--secondary-colo);
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+  font-size: 3.4rem;
+}
+
+.wapper p {
+  margin-bottom: 3.2rem;
+
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+
+.wapper button {
+  font-size: 1.4rem;
+  background-color: var(--primore-core);
+  color: white;
+
+  width: 26.3rem;
+  height: 5.2rem;
+
+  border: none;
+  border-radius: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-inline: auto;
+
+  cursor: pointer;
+}
+
+.stats {
+  width: 32.7rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+  background-color: var(--primore-stats);
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.stats .stat {
+  width: 16.7rem;
+  height: 9rem;
+  margin: 0 auto 6rem;
+}
+
+.stats .stat h3 {
+  font-size: 4.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.stats .stat p {
+  color: var(--primore-coreStats);
+  margin: 0;
+}
+
+header .woman {
+  width: 26.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+
+header::before {
+  content: '';
+  width: 100vw;
+  height: calc(108rem + var(--nav-heith));
+  background-color: var(--brand-light);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* ---------------NAV---------------------*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--nav-heith);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-inline: 2.6rem;
+}
